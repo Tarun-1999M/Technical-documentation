@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    width:100vw;
+}
+
+.menu table,tr,td{
+    border:1px solid black;
+    border-collapse:collapse; 
+}
+
+table{
+    height:100vh;
+    width:15%;
+    max-width: 400px;
+}
+
+span{
+    margin-left:20px;
+}
