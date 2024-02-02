@@ -1,7 +1,10 @@
 body{
     margin:0;
+    font-family:Helvetica;
 }
-
+*{
+    box-sizing: border-box;
+}
 table,tr,td{
     border:1px solid black;
     border-collapse:collapse; 
@@ -11,11 +14,12 @@ td{
     margin:10px;
 }
 
+
 table{
     height:100%;
-    width:100%;
     font-size: large;
-}
+    position:fixed;
+}   
 
 span{
     margin-left:20px;
@@ -24,23 +28,39 @@ span{
 
 main{
     display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 10px;
+    grid-template-columns:auto minmax(auto,max-content);
+    column-gap: 20em;
+    margin-right: 10px;
     
 }
 
 span{
-    padding:20px;
+    padding:10px;
     display: block;
    
 }
 
 table tr:last-child td{
     height:100%;
-    position:relative;
+    position:relative
+    
 }
 
 table tr:last-child span{
     position:absolute;
-    top:20px;
+    top:10px;
 }
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:visited{
+    color:black;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
